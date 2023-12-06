@@ -1,5 +1,56 @@
+body a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(94, 89, 240);
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Recursive";
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
 
+@font-face{
+    font-family: "Recursive";
+    src: url("Recursive_VF_1.085.woff2") format("woff2");
+    font-display: swap;
+}
 
+@keyframes fadeIn {
+    from {
+       font-weight: 300;
+       font-size: 20px;
+    }
+    to {
+       font-weight: 700;
+       font-size: 50px;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+       padding-top: 600px;
+       opacity: 0;
+    }
+    to {
+       padding-top: 0px;
+       opacity: 1;
+    }
+}
+
+body h1 {
+    text-align: center;
+}
+body p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.image-base{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    animation: fadeOut 2s;
+}
 .overlay {
     /* Sit on top of the page content */
     position: fixed;
