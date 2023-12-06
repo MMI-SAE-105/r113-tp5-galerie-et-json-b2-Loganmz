@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+
+<body>
+    <h1>JSON</h1>
+    <ul x-data="{
+        data: [
+            {
+                nom: 'Jean',
+                projet: 'Alpine.js',
+                url: 'https://alpinejs.dev/'
+            },
+            {
+                nom: 'Maxime',
+                projet: 'Tailwind CSS',
+                url: 'https://tailwindcss.com/'
+            },
+            {
+                nom: 'Adam',
+                projet: 'Laravel',
+                url: 'https://laravel.com/'
+            }
+        ],
+    }">
+    <template x-for="obj of data">
+        <li>
+            <span x-text="obj.nom">nom</span> : 
+            <a x-bind:href="obj.url" x-text="obj.projet">projet</a>
+        </li>
+    </template> 
+    </ul>
+</body>
+</html>
