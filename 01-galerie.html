@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
+<body x-data=" { testImage: 'https://picsum.photos/id/237/400/300',}">
     <h1>Galerie</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta provident cupiditate iste sunt minima pariatur deserunt tempore eum ipsum architecto. 
     Sequi, ipsam iure totam sint at sapiente culpa omnis ab.</p>
     <div class="overlay">
-    <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
+    <figure><img src="testImage" alt="image 237... un chiot"></figure>
 </div>
 </body>
 </html>
